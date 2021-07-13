@@ -1,0 +1,71 @@
+<%- include('partials/header')%>
+<style>
+    .closebtn {
+    
+    top: 10px;
+    right: 15px;
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .column{
+      display: inline-block;
+  }
+  .row{
+
+      text-align: center;
+  }
+</style>
+<div class="heading">
+    <div class="heading_upper">
+     <h1>Gallery</h1>
+      </div>
+   
+    <div class="heading_lower">
+     <div class="underline">
+         <div class="underline_line">
+         </div>
+         <div class="underline_oval">
+         </div>
+     </div>
+     </div>
+ </div>
+ <div class="row">
+    
+     <div class="column" style="width: 30% ; margin: 2% 2%;">
+         <img src="/img/1bc15ba1-d748-492b-a1cb-164824ba4cdd.jpg" alt="Nature" style="width:100%" onclick="mmyFunction(this);">
+          
+       </div>
+       <div class="column" style="width: 30% ; margin: 2% 2%;">
+        <img src="/img/b8ca5b98-119b-4fcb-957d-a3518dfa05df.jpg" alt="Nature" style="width:100%" onclick="mmyFunction(this);">
+         
+      </div>
+      <div class="column" style="width: 30% ; margin: 2% 2%;">
+        <img src="/img/e50d5bb3-9c59-417d-a683-485301fad3eb.jpg" alt="Nature" style="width:100%" onclick="mmyFunction(this);">
+         
+      </div>
+      <div class="column" style="width: 30% ; margin: 2% 2%;">
+        <img src="/img/IMG_8785-1030x687.jpg" alt="Nature" style="width:100%" onclick="mmyFunction(this);">
+         
+      </div>
+       
+
+     
+      
+   </div>
+   
+   <div  style="text-align: center;">
+     <span onclick="this.parentElement.style.display='none'"   class="closebtn">&times;</span>
+     <img id="expandedImg" style="width:50%">
+     <div id="imgtext"></div>
+   </div>
+   <script>
+       function mmyFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+   </script>
+   <%- include('partials/footer')%>

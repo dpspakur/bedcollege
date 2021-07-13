@@ -1,0 +1,208 @@
+.about{
+  
+    justify-content:space-around ;
+    &_director{
+        height: fit-content;
+        background-color: var(--color-secondary);
+        &_content{
+            &_btn1{
+                margin-left: 15rem;
+            }
+            display: flex;
+            padding: 30px 30px 15px 30px;
+        }
+    }
+    &_director .heading{
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    &_college_btn{
+        height: fit-content;
+        width: fit-content;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_college_btn_red{
+        padding-left: 20px;
+        
+    }
+     
+}
+.about h1{
+    font-size: 25px;
+}
+.about p{
+    text-align: justify;
+    text-justify: auto;
+   
+    font-size: 16px;
+    padding-top: 4rem;
+}
+.feature{
+    padding-bottom: 5rem;
+}
+.academic{
+    height:fit-content;
+    width: auto;
+    background-color: var(--color-secondary);
+    
+   
+    text-align: center;
+   
+     
+    &_heading{
+    
+        font-size: 15px;
+    }
+     
+    
+    &_container{
+        width: 100%;
+      
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      
+         
+    }
+    &_container_u{
+        width: 80%;
+         
+    }
+    &_container_box:link,
+    &_container_box:visited{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+        height: 15rem;
+        border: solid 1px rgba(43, 41, 41, 0.301);
+        margin-left: 20px;
+         
+        
+    }
+    &_container_box:hover .academic_container_box_icon_h,  
+    &_container_box:active{
+        background-color: var(--color-primary);
+        color: white;
+    }
+    &_container_box:hover , 
+    &_container_box:active{
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+
+    
+}
+.academic_container_box_icon{
+    font-size: 30px;
+    padding-bottom: 10px;
+    line-height: 50px;
+}
+.academic_container_box_icon_h{
+    color: var(--color-primary);
+}
+
+// notice
+.notice{
+    height: 90vh;
+    position: relative;
+    &_box{
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 35rem;
+        width: 70%;
+        border: 1px solid rgba(31, 28, 28, 0.096);
+        &_heading{
+            background-color: var(--color-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            font-size: 15px;
+            color: white;
+        }
+        &_list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &_list li{
+            list-style: none;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid rgba(31, 28, 28, 0.096);
+            font-size: 15px;
+            padding-top: 10px;
+            background-color: white;
+        }
+        &_list a{
+            color: var(--color-primary);
+        }
+        &_btn{
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+    }
+}
+.notice .heading{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+}
+.notice .heading_lower{
+    display: flex;
+    justify-content: center;
+    
+}
+// numbers section
+.numbers{
+    background-attachment: fixed;
+    height: 40vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.726)),url(/css/img/81+-1080P-Smartphone-Wallpapers-on-WallpaperPlay.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    &_student{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &_faculty{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &_staff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+.numbers h3{
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+ 
