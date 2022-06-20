@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
     "compile:sass": "node-sass sass/main.scss public/css/style.css -w",
     "start": "node index.js"
-
+  },
+  "engines": {
+    "node": "12"
   },
   "author": "",
   "license": "ISC",
